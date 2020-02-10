@@ -38,7 +38,7 @@ loadFilmes(){
                             <article key={filme.id} className="filme" >
                                 <strong>{filme.nome}</strong>
                                 <img src={filme.foto} />
-                                <Link to="/">Acessar</Link>
+                                <Link to={`/filme/${filme.id}`}>Acessar</Link>
                             </article>
                         )
                     })}
